@@ -7,7 +7,7 @@ import { HomeComponent } from "./layout/home/home.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NgxSpinnerComponent, HomeComponent],
+  imports: [ NgxSpinnerComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
