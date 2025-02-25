@@ -1,0 +1,17 @@
+<section>
+    <div class="card  rounded-md  m-5  mt-10 border-b-2 border-gray-800 pb-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 justify-start items-center ">
+            <div>
+                <img [src]="itemData.image" class="w-full h-[300px] object-contain" [alt]="itemData.title" />
+                <div class="text-center ">
+                    <p>{{itemData.price |currency:'GBP'}}</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-gray-700 capitalize text-xl">{{itemData.category}}</h4>
+                <h3 class="capitalize text-xl">{{itemData.title}}</h3>
+                <p class="text-sm text-gray-700">{{itemData.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
